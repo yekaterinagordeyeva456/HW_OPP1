@@ -34,7 +34,7 @@ public class PuffenduiStudents extends HogwartsStudents {
                 "industriousness=" + industriousness +
                 ", loyalty=" + loyalty +
                 ", honor1=" + honor1 +
-                '/'+ "first name - " +
-                this.getFirstName()+ " }";
+                '/'+ " -  " +
+                this.getFirstName()+ ' ' + this.getLastName() + " }";
     }
 }

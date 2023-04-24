@@ -11,7 +11,12 @@ public abstract class HogwartsStudents {
         this.lastName = lastName;
     }
 
+    public int getCommonAbilities() {
+        return sumMagic;
+    }
+
     public String getFirstName() {
+
         return firstName;
     }
 
@@ -29,18 +34,25 @@ public abstract class HogwartsStudents {
         return this;
     }
 
-    public int getCommonAbilities() {
-        return sumMagic;
-    }
-
     public abstract int getTotalAbility();
+
     public void compareWith(HogwartsStudents students) {
         if (this.getTotalAbility() > students.getTotalAbility()) {
-            System.out.println(this.firstName+" лучше чем "+students.firstName);
-        }else if (this.getTotalAbility() < students.getTotalAbility()) {
-                System.out.println(students.firstName+" лучше чем "+this.firstName);
-        }else if (this.getTotalAbility() == students.getTotalAbility()) {
+            System.out.println(this.firstName + " лучше чем " + students.firstName);
+        } else if (this.getTotalAbility() < students.getTotalAbility()) {
+            System.out.println(students.firstName + " лучше чем " + this.firstName);
+        } else if (this.getTotalAbility() == students.getTotalAbility()) {
             System.out.println("Студенты " + students.firstName + " и " + this.firstName + " равны");
+        }
+    }
+
+    public void compare(HogwartsStudents students) {
+        if (this.getCommonAbilities() > students.getCommonAbilities()) {
+            System.out.println(this.firstName + " по силе магии, лучше чем " + students.firstName);
+        } else if (this.getCommonAbilities() < students.getCommonAbilities()) {
+            System.out.println(students.firstName + " по силе магии, лучше чем " + this.firstName);
+        } else if (this.getCommonAbilities() == students.getCommonAbilities()) {
+            System.out.println("Студенты " + students.firstName + " и " + this.firstName + " равны по силе магии");
         }
     }
 }

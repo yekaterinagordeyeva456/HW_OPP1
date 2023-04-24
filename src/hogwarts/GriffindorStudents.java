@@ -32,7 +32,7 @@ public class GriffindorStudents extends HogwartsStudents{
         return "GriffindorStudents{" +
                 "nobility=" + nobility +
                 ", honor=" + honor +
-                ", bravery=" + bravery + '/'+ "first name - " +
-                this.getFirstName()+" }";
+                ", bravery=" + bravery + '/'+ " - " +
+                this.getFirstName()+ ' ' + this.getLastName() +" }";
     }
 }
