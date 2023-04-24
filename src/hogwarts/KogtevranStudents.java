@@ -39,6 +39,6 @@ public class KogtevranStudents extends HogwartsStudents {
                 ", wisdom=" + wisdom +
                 ", esprit=" + esprit +
                 ", creation=" + creation + '/'+ " - " +
-                this.getFirstName()+ ' ' + this.getLastName() + " }";
+                this.getFirstName()+ ' ' + this.getLastName() + "}";
     }
 }
